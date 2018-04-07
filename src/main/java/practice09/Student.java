@@ -21,8 +21,4 @@ public class Student extends Person {
             return super.introduce().concat(" I am a Student. I am at " + getKlass().getDisplayName() + ".");
         }
     }
-
-//    public void setKlass(Klass klass) {
-//        this.klass = klass;
-//    }
 }
