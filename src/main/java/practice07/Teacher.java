@@ -1,7 +1,5 @@
 package practice07;
 
-import practice06.Person;
-
 public class Teacher extends Person {
     Klass klass;
 
@@ -27,11 +25,11 @@ public class Teacher extends Person {
         }
     }
 
-    public String introduceWith(Student jerry) {
-        if (jerry.getKlass().getNumber() == getKlass().getNumber()) {
-            return super.introduce().concat(" I am a Teacher. I teach " + jerry.getName() + ".");
+    public String introduceWith(Student student) {
+        if (student.getKlass().getNumber() == getKlass().getNumber()) {
+            return super.introduce().concat(" I am a Teacher. I teach " + student.getName() + ".");
         } else {
-            return super.introduce().concat(" I am a Teacher. I don't teach " + jerry.getName() + ".");
+            return super.introduce().concat(" I am a Teacher. I don't teach " + student.getName() + ".");
         }
     }
 }
